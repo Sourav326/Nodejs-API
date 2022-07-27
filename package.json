@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-api",
+  "version": "1.0.0",
+  "description": "Ecommerce API's in Node js, Express js and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sourav326/Nodejs-API.git"
+  },
+  "author": "Sourav Chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sourav326/Nodejs-API/issues"
+  },
+  "homepage": "https://github.com/Sourav326/Nodejs-API#readme"
+}
