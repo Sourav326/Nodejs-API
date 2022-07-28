@@ -1,36 +1,29 @@
 # Ecommerce API Project Using Nodejs, Expressjs and Mongodb.
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/larymak/Python-project-Scripts)
-![Contributors](https://img.shields.io/github/contributors/larymak/Python-project-Scripts?style=plastic)
-![Forks](https://img.shields.io/github/forks/larymak/Python-project-Scripts)
-![Stars](https://img.shields.io/github/stars/larymak/Python-project-Scripts)
 ![Licence](https://img.shields.io/github/license/larymak/Python-project-Scripts)
 ![Issues](https://img.shields.io/github/issues/larymak/Python-project-Scripts)
-<a href="https://join.slack.com/t/ngc-goz8665/shared_invite/zt-r01kumfq-dQUT3c95BxEP_fnk4yJFfQ">
 <img alt="Nodejs expressjs Mongodb" src="https://miro.medium.com/max/600/1*NFTgwZ_TUmceZnSHCundBw.jpeg" width="165"/>
-</a>
 
 ## This is a list of Python scripts for beginner projects.
 
 ### Description
 
-Welcome aboard fellow developer, this is where you will find Python scripts which you are free to contribute to.
-You can contribute by submitting your own scripts, also written in Python, which you think would be amazing for other people to see.
+Welcome aboard fellow developer, this is where you will find Ecommerce project developed by using node js, express js and mongodb in which you are free to contribute.
+You can contribute by submitting your own code.
 
-### Contribution Guidelines
-
-The contribution guidelines are as per the guide [HERE](https://github.com/larymak/Python-project-Scripts/blob/main/CONTRIBUTING.md).
 
 ### Instructions
 
-- Fork this repository
-- Clone your forked repository
-- Add your scripts
-- Commit and push
-- Create a pull request
-- Star this repository
-- Wait for pull request to merge
-- Celebrate your first step into the open source world and contribute more
+- Clone this repository
+- Run npm install to install all the required packages
+```bash
+npm install
+```
+- Run npm start to start the server
+```bash
+npm start
+```
+
 
 #### Note: When you add a project, add it to the README for ease of finding it.
 #### Note: Please do not have the project link reference your local forked repository. Always link it to this repository after it has been merged with main.
