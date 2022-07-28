@@ -6,7 +6,6 @@
 <img src="https://img.shields.io/github/issues/larymak/Python-project-Scripts" alt="Total Downloads">
 </p>
 
-## This is a list of Python scripts for beginner projects.
 
 ### Description
 
@@ -74,4 +73,9 @@ npm i nodemailer
 - **[validator](https://www.npmjs.com/package/validator)**
 ```bash
 npm i validator
+```
+## List of API's available in this project.
+- Get all products
+```bash
+http://localhost:3001/products
 ```
