@@ -31,4 +31,39 @@ npm start
 
 ## Packages
 
-- **[bcryptjs](https://www.npmjs.com/package/bcryptjs/)**
+- **[bcryptjs](https://www.npmjs.com/package/bcryptjs)**
+```bash
+npm i bcryptjs
+```
+- **[body-parser](https://www.npmjs.com/package/body-parser)**
+```bash
+npm i body-parser
+```
+- **[cookie-parser](https://www.npmjs.com/package/cookie-parser)**
+```bash
+npm i cookie-parser
+```
+- **[dotenv](https://www.npmjs.com/package/dotenv)**
+```bash
+npm i dotenv
+```
+- **[express](https://www.npmjs.com/package/express)**
+```bash
+npm i express
+```
+- **[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)**
+```bash
+npm i jsonwebtoken
+```
+- **[mongoose](https://www.npmjs.com/package/mongoose)**
+```bash
+npm i mongoose
+```
+- **[nodemailer](https://www.npmjs.com/package/nodemailer)**
+```bash
+npm i nodemailer
+```
+- **[validator](https://www.npmjs.com/package/validator)**
+```bash
+npm i validator
+```
