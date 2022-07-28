@@ -7,13 +7,13 @@
 </p>
 
 
-### Description
+## Description
 
 Welcome aboard fellow developer, this is where you will find Ecommerce project developed by using node js, express js and mongodb in which you are free to contribute.
 You can contribute by submitting your own code.
 
 
-### Instructions
+## Instructions
 
 - Open your cmd or any terminal.
 - Clone this repository.
@@ -75,7 +75,7 @@ npm i nodemailer
 npm i validator
 ```
 ## List of API's available in this project.
-- Get all products
+- Get all products list
 ```bash
 http://localhost:3001/products
 ```
