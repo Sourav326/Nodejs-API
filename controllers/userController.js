@@ -1,5 +1,11 @@
 const User = require('../models/userModel');
 
+/**
+ * for getting the list of all users
+ * 
+ * @param {*} req 
+ * @param {*} res 
+ */
 exports.getAllUsers = async(req,res,next)=>{
     const users = await User.find();
     res.status(200).json({
@@ -8,6 +14,12 @@ exports.getAllUsers = async(req,res,next)=>{
     })
 }
 
+
+/**
+ * 
+ * @param {*} req 
+ * @param {*} res 
+ */
 exports.createUser = async(req,res,next)=>{
     const user = await User.create(req.body);
     const token = user.getJwtToken();

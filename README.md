@@ -16,12 +16,20 @@ You can contribute by submitting your own code.
 
 ### Instructions
 
-- Clone this repository
+- Open your cmd or any terminal.
+- Clone this repository.
+```bash
+git clone https://github.com/Sourav326/Nodejs-API.git
+```
 - Run npm install to install all the required packages
 ```bash
 npm install
 ```
-- Run npm start to start the server
+- Add Mongodb database url in config.env file
+```bash
+DB_HOSTNAME = "mongodb+srv://<username>:<password>@souravclustor.5598t.mongodb.net/<database name>?retryWrites=true&w=majority"
+```
+- Run npm start to start the server and also look the terminal, their must not be any error.
 ```bash
 npm start
 ```
