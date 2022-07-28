@@ -1,4 +1,4 @@
-# Python-project-Scripts.
+# Ecommerce API Project Using Nodejs, Expressjs and Mongodb.
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/larymak/Python-project-Scripts)
 ![Contributors](https://img.shields.io/github/contributors/larymak/Python-project-Scripts?style=plastic)
@@ -7,7 +7,7 @@
 ![Licence](https://img.shields.io/github/license/larymak/Python-project-Scripts)
 ![Issues](https://img.shields.io/github/issues/larymak/Python-project-Scripts)
 <a href="https://join.slack.com/t/ngc-goz8665/shared_invite/zt-r01kumfq-dQUT3c95BxEP_fnk4yJFfQ">
-<img alt="Join us on Slack" src="https://raw.githubusercontent.com/netlify/netlify-cms/master/website/static/img/slack.png" width="165"/>
+<img alt="Nodejs expressjs Mongodb" src="https://miro.medium.com/max/600/1*NFTgwZ_TUmceZnSHCundBw.jpeg" width="165"/>
 </a>
 
 ## This is a list of Python scripts for beginner projects.
