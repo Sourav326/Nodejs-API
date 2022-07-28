@@ -16,11 +16,12 @@ exports.getAllUsers = async(req,res,next)=>{
 
 
 /**
+ * for registering the user
  * 
  * @param {*} req 
  * @param {*} res 
  */
-exports.createUser = async(req,res,next)=>{
+exports.registerUser = async(req,res,next)=>{
     const user = await User.create(req.body);
     const token = user.getJwtToken();
     res.status(201).json({
