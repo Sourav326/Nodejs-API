@@ -60,11 +60,11 @@ const productSchema = new mongoose.Schema({
                 required:true
             }
         }
-    ]
-    // createdAt:{
-    //     type:Date,
-    //     required:Date.now
-    // }
+    ],
+    createdAt:{
+        type:Date,
+        default:Date.now
+    }
 })
 
 module.exports = mongoose.model("Product",productSchema);
