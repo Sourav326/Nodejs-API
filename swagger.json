@@ -18,10 +18,22 @@
         "/products": {
             "get": {
                 "tags": ["Products"],
-                "summary": "Get all products ilist",
+                "summary": "Get all products list",
                 "responses": {
                     "200": {
                         "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Products"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": ["Products"],
+                "summary": "Create new product",
+                "responses": {
+                    "201": {
+                        "description": "CREATED",
                         "schema": {
                             "$ref": "#/definitions/Product"
                         }
@@ -31,7 +43,7 @@
         }
     },
     "definitions": {
-        "Product": {
+        "Products": {
             "type": "object",
             "properties": {
                 "success": {
@@ -39,6 +51,67 @@
                 },
                 "products": {
                     "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "price": {
+                                "type": "number"
+                            },
+                            "rating": {
+                                "type": "number"
+                            },
+                            "images": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "public_id": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        },
+                                        "_id": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "category": {
+                                "type": "string"
+                            },
+                            "stock": {
+                                "type": "number"
+                            },
+                            "numOfReviews": {
+                                "type": "number"
+                            },
+                            "createdAt": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        },
+        "Product": {
+            "type": "object",
+            "properties": {
+                "success": {
+                    "type": "boolean"
+                },
+                "products": {
                     "items": {
                         "type": "object",
                         "properties": {
