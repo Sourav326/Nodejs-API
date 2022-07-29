@@ -34,7 +34,7 @@ npm start
 ```
 
 
-#### Note: If you find this project useful than please give star and share with your friend.
+#### Note: You have no need to install these below packages as you already installed them with the command npm install.
 
 ## Packages
 
@@ -85,3 +85,4 @@ npm i swagger-ui-express
 ```bash
 http://localhost:3001/api-docs
 ```
+#### Note: If you find this project useful than please give star and share with your friend.
