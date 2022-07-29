@@ -75,7 +75,5 @@ npm i nodemailer
 npm i validator
 ```
 ## List of API's available in this project.
-- Get all products list
-```bash
-http://localhost:3001/products
-```
+- Get all API lists from here
+- **[Swagger](http://localhost:3001/api-docs)**
