@@ -9,25 +9,21 @@
             "url": "https://opensource.org/licenses/MIT"
         }
     },
-    "host": "http://localhost:3001",
+    "host": "localhost:3001",
     "basePath": "/",
-    "tags": [{
-        "name": "Users",
-        "description": "API for users in the system"
-    }],
     "schemes": ["http"],
     "consumes": ["application/json"],
     "produces": ["application/json"],
     "paths": {
-        "/users": {
+        "/products": {
             "get": {
-                "tags": ["Users"],
-                "summary": "Get all users in system",
+                "tags": ["Products"],
+                "summary": "Get all products ilist",
                 "responses": {
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/Users"
+                            "$ref": "#/definitions/Product"
                         }
                     }
                 }
@@ -35,44 +31,68 @@
         }
     },
     "definitions": {
-        "User": {
-            "required": ["name", "_id", "companies"],
+        "Product": {
+            "type": "object",
             "properties": {
-                "_id": {
-                    "type": "integer",
-                    "uniqueItems": true
-                },
-                "isPublic": {
+                "success": {
                     "type": "boolean"
                 },
-                "name": {
-                    "type": "string"
-                },
-                "books": {
+                "products": {
                     "type": "array",
                     "items": {
                         "type": "object",
                         "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
                             "name": {
                                 "type": "string"
                             },
-                            "amount": {
+                            "description": {
+                                "type": "string"
+                            },
+                            "price": {
                                 "type": "number"
+                            },
+                            "rating": {
+                                "type": "number"
+                            },
+                            "images": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "public_id": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        },
+                                        "_id": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "category": {
+                                "type": "string"
+                            },
+                            "stock": {
+                                "type": "number"
+                            },
+                            "numOfReviews": {
+                                "type": "number"
+                            },
+                            "createdAt": {
+                                "type": "string"
                             }
                         }
                     }
-                },
-                "companies": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
                 }
+
             }
-        },
-        "Users": {
-            "type": "array",
-            "$ref": "#/definitions/User"
+
         }
     }
+
 }
