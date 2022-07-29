@@ -74,6 +74,14 @@ npm i nodemailer
 ```bash
 npm i validator
 ```
+- **[swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)**
+```bash
+npm i swagger-ui-express
+```
 ## List of API's available in this project.
-#### Get all API lists from here <img alt="Nodejs expressjs Mongodb" src="https://www.scottbrady91.com/img/logos/swagger-banner.png" width="165"/>
-- **[Swagger](http://localhost:3001/api-docs)**
+<p><img alt="Nodejs expressjs Mongodb" src="https://www.scottbrady91.com/img/logos/swagger-banner.png" width="165"/></p>
+
+#### Get all API lists by going to this url
+```bash
+http://localhost:3001/api-docs
+```
