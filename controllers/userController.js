@@ -1,5 +1,6 @@
 const User = require('../models/userModel');
 
+
 /**
  * for getting the list of all users
  * 
@@ -61,7 +62,15 @@ exports.login = async(req,res,next)=>{
     }
 
     const token = user.getJwtToken();
-    res.status(200).json({
+
+    //options for cookie
+    const options = {
+        expires:new Date(
+            Date.now() + process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000
+            ),
+        httpOnly:true
+    }
+    res.status(200).cookie('token',token,options).json({
         success:true,
         user,
         token
