@@ -24,12 +24,8 @@ exports.getAllUsers = async(req,res,next)=>{
  */
 exports.registerUser = async(req,res,next)=>{
     const user = await User.create(req.body);
-    const token = user.getJwtToken();
-    res.status(201).json({
-        success:true,
-        user,
-        token
-    })
+
+    sendToken(user,201,res);
 }
 
 exports.login = async(req,res,next)=>{
@@ -61,6 +57,13 @@ exports.login = async(req,res,next)=>{
         })
     }
 
+    sendToken(user,200,res);
+
+}
+
+
+//Creating token and saving in cookie
+const sendToken = (user,statusCode,res)=> {
     const token = user.getJwtToken();
 
     //options for cookie
@@ -70,7 +73,8 @@ exports.login = async(req,res,next)=>{
             ),
         httpOnly:true
     }
-    res.status(200).cookie('token',token,options).json({
+    
+    res.status(statusCode).cookie('token',token,options).json({
         success:true,
         user,
         token
